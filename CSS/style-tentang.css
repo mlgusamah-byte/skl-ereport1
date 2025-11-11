@@ -209,3 +209,106 @@ header {
       width: 250px;
     }
   }
+  /* ===== RESPONSIVE DEVICE ===== */
+
+/* Tablet (max-width: 992px) */
+@media (max-width: 992px) {
+  header {
+    padding: 1rem 1.5rem;
+  }
+
+  .about {
+    margin-top: 2.5rem;
+    padding: 0 1.5rem;
+  }
+
+  .about-text h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .about-text p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .about-content {
+    gap: 2.5rem;
+  }
+}
+
+/* HP sedang (max-width: 768px) */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .nav-links {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .about-content {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-image img {
+    width: 220px;
+    box-shadow: 6px 6px 18px rgba(30, 64, 175, 0.25);
+  }
+
+  .about-text {
+    flex: none;
+    max-width: 650px;
+  }
+
+  .team-cards {
+    gap: 1rem;
+  }
+
+  .team-card {
+    width: 90%;
+    max-width: 260px;
+  }
+}
+
+/* HP kecil (max-width: 480px) */
+@media (max-width: 480px) {
+  .brand {
+    font-size: 1rem;
+  }
+
+  .nav-links {
+    gap: 0.5rem;
+  }
+
+  .nav-links a {
+    font-size: 0.9rem;
+  }
+
+  .about-text h1 {
+    font-size: 1.6rem;
+  }
+
+  .about-text p {
+    font-size: 0.95rem;
+  }
+
+  .about-image img {
+    width: 180px;
+  }
+
+  .btn {
+    padding: 0.65rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  .team-card img {
+    width: 70px;
+    height: 70px;
+  }
+}
