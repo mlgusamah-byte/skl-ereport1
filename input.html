@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Input Nilai | E-Report</title>
+  <link rel="stylesheet" href="CSS/style-input.css">
+  <link rel="icon" href="assets/Logo idn.png">
+</head>
+<body>
+ <!-- ===== NAVBAR ===== -->
+  <header>
+    <nav class="navbar">
+      <div class="nav-left">
+        <img src="assets/Logo idn.png" alt="Logo" class="logo">
+        <h2 class="brand">IDN Boarding School</h2>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="input.html" class="active">Input</a></li>
+        <li><a href="data.html">Data</a></li>
+        <li><a href="filter.html">Filter</a></li>
+        <li><a href="statistik.html">Statistik</a></li>
+        <li><a href="pengumuman.html">Pengumuman</a></li>
+        <li><a href="Tentang.html">Tentang</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container fade-in">
+    <h1 class="title">Form Input Laporan <span>Nilai Siswa</span> </h1>
+    <form action="#" class="form-box" id="laporanForm">
+
+      <div class="form-group">
+        <label for="nama">Nama Siswa:</label>
+        <input type="text" id="nama" placeholder="Masukkan nama siswa..." required>
+      </div>
+
+      <div class="form-group">
+        <label for="kelas">Kelas:</label>
+        <input type="text" id="kelas" placeholder="Masukkan kelas..." required>
+      </div>
+
+      <div class="form-group">
+        <label for="judul">Mata Pelajaran:</label>
+        <input type="text" id="judul" placeholder="Masukkan mata pelajaran..." required>
+      </div>
+
+      <div class="form-group">
+        <label for="nilai">Nilai:</label>
+        <input type="number" id="nilai" placeholder="Masukkan nilai (0-100)" min="0" max="100" required>
+      </div>
+
+      <button type="submit" class="btn-primary">💾 Simpan Laporan</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>© 2025 E-Report | Rekayasa Perangkat Lunak</p>
+  </footer>
+
+
+  <script src="js/input.js" defer></script>
+</body>
+</html>
